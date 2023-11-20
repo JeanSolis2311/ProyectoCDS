@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+  <a href="index.html#food" onclick="w3_close()" class="w3-bar-item w3-button">Principal</a>
+  <a href="quienes_somos.html#about" onclick="w3_close()" class="w3-bar-item w3-button">Quienes somos</a>
+  <a href="Integrantes.html#about" onclick="w3_close()" class="w3-bar-item w3-button">Integrantes</a>
+  <a href="contactenos.html#about" onclick="w3_close()" class="w3-bar-item w3-button">Contactenos</a>
+  <a href="Ubicacion.html#about" onclick="w3_close()" class="w3-bar-item w3-button">Ubicación</a>
+  <a href="RedesSociales.html#about" onclick="w3_close()" class="w3-bar-item w3-button">Redes Sociales</a>
+</nav>
+
+
+
+<!-- Top menu -->
+<div class="w3-top" style="background-color: black;">
+  <div class="w3-xlarge" style="max-width:1200px;margin:auto; background-color: gray;">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16" style="color: white;">Productos y Servicios</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="img/alarma.png" alt="alarma" style="width:100%">
+      <h3>Sistema de alerta Vecinal</h3>
+      <p>Desarrollamos un sistema con el cual los vecinos de una comunidad pueden mantenerse al tanto de posibles riesgos y amenazas.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/mapa.png" alt="mapa" style="width:100%">
+      <h3>Plantillas personales de mapas</h3>
+      <p>podemos diseñar a tu gusto el mapa de tu ciudad e implementarlo en una app para ti.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/farmacia.png" alt="farmacia" style="width:100%">
+      <h3>Formato de farmacias</h3>
+      <p>Tenemos sistemas para ti, desde farmacias, hasta tiendas y gasolineras.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/vuelo.png" alt="vuelo" style="width:100%">
+      <h3>Aplicaciones de vuelo</h3>
+      <p>Hemos desarrollado varias aplicaciones para aerolineas, para facilitar el proceso de viaje de sus consumidores.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="img/tienda.png" alt="tienda" style="width:100%">
+      <h3>Tiendas Online</h3>
+      <p>tenemos varias plantillas para diferentes sitios online de ventas.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/calculadora.png" alt="calculadora" style="width:100%">
+      <h3>Calculadoras</h3>
+      <p>Tenemos muchas calculadoras de todo tipo, desde las mas basicas hasta las mas avanzadas.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/musica.png" alt="musica" style="width:100%">
+      <h3>Musica para ti</h3>
+      <p>Tenemos muchos formatos para aplicaciones musicales, ademas de multiples funcionalidades.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/Eco.png" alt="Eco" style="width:100%">
+      <h3>Aplicaciones de viaje local</h3>
+      <p>Hemos desarrollado una variedad de aplicaciones para transportes de todo tipo: vehiculos, bicicletas, autobuses.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Inspiracion</h3>
+    <div class="w3-padding-12">
+      <h6><b><i>Si puedes soñarlo, puedes prograrmarlo</b></i></h6>
+      <p>Al momento de su muerte Alejandro tenía 23 años, era un joven con un gran potencial pedagógico, en su canal de Youtube ya superaba los 150 mil suscriptores, y había compartido cursos sobre programación en Java, C++, C y Python. Ha sido de gran ayuda con los videos que dejo tras de si, y una gran motivación para todos los jovenes que comienzan en este mundo de la programación.</p>
+    </div>
+  </div>
+  <hr>
+  
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+	<footer	style="background-color: black; color: white; text-align: center; padding: 20px 0;">
+    	<p>&copy; 2023 Proyecto Software</p>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+
+    <style>
+         /* Estilos para el encabezado y la barra de navegación */
+        header {
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #66CCCC;
+            color: #000;
+        }
+
+        /* Estilos para el contenedor del formulario */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        /* Estilos para el formulario */
+        form label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #000;
+        }
+
+        form input[type="submit"] {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Estilos para la información importante */
+        .info-box {
+            margin-top: 10<px;
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .info-box .icon img {
+            width: 40px; /* Ajusta el ancho según necesites */
+            height: 40px; /* Ajusta la altura según necesites */
+            margin-right: 5px;
+        }
+
+        .info-box .text {
+            color: #FF6600;
+        }
+
+        /* Estilos para el contenido principal */
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        /* Estilos para el footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contáctenos</h1>
+        <nav>
+            <a href="index.html#food">Principal</a>
+            <a href="productos.html#about">Productos y servicios</a>
+            <a href="quienes_somos.html#about">Quienes somos</a>
+            <a href="Integrantes.html#about">Integrantes</a>
+            <a href="Ubicacion.html#about">Ubicación</a>
+            <a href="RedesSociales.html#about">Redes Sociales</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div class="info-box">
+            <div class="icon">
+                <img src="img/warning.png" alt="Ícono">
+            </div>
+            <div class="text">Recuerde, este es nuestro <b>ÚNICO WEBSITE OFICIAL</b> habilitado para llamadas y contacto con nuestra institución.</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Consultorio Médico Dra. Ana García. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

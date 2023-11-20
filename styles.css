@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo para el header con fondo */
+.header-with-background {
+    background-image: url('img/Tecnologia.png'); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos para el logo */
+.header-with-background img {
+    display: block;
+    margin: 0 auto; /* Para centrar el logo */
+    position: relative;
+    z-index: 1; /* Coloca el logo sobre el fondo */
+}
+
+/* Estilos del fondo transparente */
+.header-with-background::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro transparente */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+/* Estilos para el menú */
+nav {
+    position: relative;
+    z-index: 2; /* Coloca el menú sobre el fondo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px; /* Espaciado interior */
+    transition: background-color 0.3s; /* Transición suave */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Cambio de color al pasar el cursor */
+nav ul li a:hover {
+    background-color: #555; /* Color de fondo al pasar el cursor */
+}
+
+/* Nuevos estilos para el fondo transparente del main */
+main {
+    padding: 20px;
+    position: relative; /* Asegura que los elementos absolutos sean relativos a este */
+    z-index: 1; /* Asegura que el contenido esté por encima del fondo */
+    /* Estilos para el fondo de la imagen */
+    background-image: url('img/UGlogo.png'); /* Ruta de tu imagen */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main::before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.7); /* Color negro transparente */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; /* Sitúa el fondo detrás del contenido */
+}
+
+
+
+footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
